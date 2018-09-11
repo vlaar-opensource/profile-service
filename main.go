@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/zkrhm/fire-starter/cmd"
+	"github.com/vlaar-opensource/profile-service/cmd"
 )
 
 func main() {

@@ -2,12 +2,36 @@
 
 
 [[projects]]
+  digest = "1:c79fb010be38a59d657c48c6ba1d003a8aa651fa56b579d959d74573b7dff8e1"
+  name = "github.com/gorilla/context"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
+  version = "v1.1.1"
+
+[[projects]]
+  digest = "1:e73f5b0152105f18bc131fba127d9949305c8693f8a762588a82a48f61756f5f"
+  name = "github.com/gorilla/mux"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "e3702bed27f0d39777b0b37b664b6280e8ef8fbf"
+  version = "v1.6.2"
+
+[[projects]]
   digest = "1:870d441fe217b8e689d7949fef6e43efbc787e50f200cb1e70dbca9204a1d6be"
   name = "github.com/inconshreveable/mousetrap"
   packages = ["."]
   pruneopts = "UT"
   revision = "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
   version = "v1.0"
+
+[[projects]]
+  digest = "1:1919e36a53e2297eca9d3516ca358dec92257fe0de3361351e09400c91d65d5e"
+  name = "github.com/oleiade/reflections"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "2b6ec3da648e3e834dc41bad8d9ed7f2dc6a9496"
+  version = "v1.0.0"
 
 [[projects]]
   digest = "1:645cabccbb4fa8aab25a956cbcbdf6a6845ca736b2c64e197ca7cbb9d210b939"
@@ -25,24 +49,13 @@
   revision = "9a97c102cda95a86cec2345a6f09f55a939babf5"
   version = "v1.0.2"
 
-[[projects]]
-  digest = "1:6e4b0be08e7448d93906e8e4f5b6525c110e43d7d8c41dbebad35e12bb347e53"
-  name = "github.com/zkrhm/fire-starter"
-  packages = [
-    "cmd",
-    "hello",
-  ]
-  pruneopts = "UT"
-  revision = "c6bb7a59b60a320990fcb5008dddc1271b5f6a3d"
-  version = "v0.3"
-
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/gorilla/mux",
+    "github.com/oleiade/reflections",
     "github.com/spf13/cobra",
-    "github.com/zkrhm/fire-starter/cmd",
-    "github.com/zkrhm/fire-starter/hello",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
