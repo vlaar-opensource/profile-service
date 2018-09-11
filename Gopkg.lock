@@ -25,9 +25,24 @@
   revision = "9a97c102cda95a86cec2345a6f09f55a939babf5"
   version = "v1.0.2"
 
+[[projects]]
+  digest = "1:6e4b0be08e7448d93906e8e4f5b6525c110e43d7d8c41dbebad35e12bb347e53"
+  name = "github.com/zkrhm/fire-starter"
+  packages = [
+    "cmd",
+    "hello",
+  ]
+  pruneopts = "UT"
+  revision = "c6bb7a59b60a320990fcb5008dddc1271b5f6a3d"
+  version = "v0.3"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/spf13/cobra"]
+  input-imports = [
+    "github.com/spf13/cobra",
+    "github.com/zkrhm/fire-starter/cmd",
+    "github.com/zkrhm/fire-starter/hello",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
