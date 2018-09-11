@@ -27,7 +27,7 @@ all: fmt lint $(BIN) ; $(info $(M) building executable…) @ ## Build program bi
 	$Q $(GO) build \
 		-tags release \
 		-ldflags '-X $(PACKAGE)/cmd.Version=$(VERSION) -X $(PACKAGE)/cmd.BuildDate=$(DATE) -X $(PACKAGE)/cmd.AppName=$(APP_NAME)' \
-		-o $(BIN)/$(PACKAGE) main.go
+		-o $(BIN)/$(APP_NAME) main.go
 
 .PHONY: install
 install: ; $(info $(M) installing executable…) @ ## do go install

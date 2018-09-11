@@ -14,7 +14,7 @@ func init() {
 }
 
 var serveCmd = &cobra.Command{
-	Use:   "version",
+	Use:   "serve",
 	Short: "run service",
 	Run: func(cmd *cobra.Command, args []string) {
 		port := os.Getenv("APP_PORT")
@@ -31,5 +31,6 @@ var serveCmd = &cobra.Command{
 
 		app.Initialize()
 		app.Run(port)
+
 	},
 }

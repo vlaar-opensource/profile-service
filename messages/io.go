@@ -6,8 +6,9 @@ import (
 
 //OkResponse ...
 type OkResponse struct {
-	Code    int    `json:"code:omitempty"`
-	Message string `json:"message"`
+	Code    int         `json:"code:omitempty"`
+	Message string      `json:"message"`
+	Payload interface{} `json:"payload"`
 }
 
 // UnmarshalOkResponse blablabla
