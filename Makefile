@@ -1,7 +1,7 @@
-APP_NAME = fire-starter
+APP_NAME = profile-service
 SHORT_DESC = application boiler plate 
 LONG_DESC = write your decription here...
-USER = zkrhm
+USER = vlaar-opensource
 PACKAGE  = github.com/$(USER)/$(APP_NAME)
 DATE    ?= $(shell date +%FT%T%z)
 VERSION ?= $(shell git describe --tags --always --dirty --match=v* 2> /dev/null || \

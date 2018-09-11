@@ -7,7 +7,7 @@ import (
 
 // AppName: blablabla
 var (
-	AppName   = "YourDamnApp"
+	AppName   = "ProfileService"
 	ShortDesc = "Application Boiler Plate"
 	LongDesc  = `Please Add Description to your app config`
 )
